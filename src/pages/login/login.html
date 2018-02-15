@@ -1,0 +1,21 @@
+<ion-content padding class="login-page">
+  <div class="title">
+    EsmeApp
+  </div>
+  <ion-card>
+    <ion-card-header>
+      Login
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <ion-item>
+          <ion-input [(ngModel)]="user.username" type="email" placeholder="example@example.com"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="user.password" type="password" placeholder="Contraseña"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button (click)="login()" ion-button block outline color="secondary">Login</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
